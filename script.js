@@ -1,6 +1,6 @@
 // Simulazione di credenziali
-const validUsername = "jeremy";
-const validPassword = "haskell13";
+const validUsername = "anna";
+const validPassword = "Ape2024";
 
 // Funzione di login
 function login(event) {
@@ -19,9 +19,10 @@ function login(event) {
 // Testo che cambia periodicamente
 const texts = [
     "Buon Natale",
-    "Auguri Amore Mio",
+    "Non ce la faccio più",
     "Momenti felici vissuti insieme",
-    "Me and You...Always!"
+    "Vorrei una pizzetta",
+    "GRAZIE DI TUTTO!!"
 ];
 let textIndex = 0;
 
