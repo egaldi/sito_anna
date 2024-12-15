@@ -10,10 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
     <style>
         /* Imposta l'immagine di sfondo */
-        body,html {
+        /* body,html {
             margin: 10;
             padding: 10;
-            background-image: url('sfondo.jpg'); /* Sostituisci con il tuo URL */
+            background-image: url('sfondo.jpg'); 
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -24,7 +24,30 @@
             align-items: center;
             justify-content: center;
             white-space: nowrap;
+        } */
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #f8f8f8; /* Colore di sfondo neutro */
         }
+
+        /* Stile per l'immagine centrale */
+        .center-image {
+            max-width: 95%; /* L'immagine occupa al massimo il 90% della larghezza dello schermo */
+            max-height: 95%; /* L'immagine occupa al massimo l'80% dell'altezza dello schermo */
+            object-fit: contain; /* Mantiene le proporzioni dell'immagine */
+            border: 5px solid #FFD700; /* Bordo dorato */
+            border-radius: 10px; /* Angoli arrotondati */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Effetto ombra */
+        }
+
 
         /* Stile per il testo casuale */
         .random-text {
@@ -48,10 +71,9 @@
     <!-- <div class="static-container">
         <h1 class="centralText" id="dynamicText">Buon Natale!</h1>
     </div> -->
+    <img src="sfondo.jpg" alt="immagine" class="center-image">
     <div class="random-text" id="randomText">Basta fare i compiti!!!</div>
-
-
-
+ 
     <script src="script.js"></script>
 </body>
 </html>
